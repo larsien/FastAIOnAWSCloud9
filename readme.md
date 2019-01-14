@@ -15,3 +15,15 @@ wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
 chmod a+x Miniconda2-latest-Linux-x86_64.sh 
 
 ./Miniconda2-latest-Linux-x86_64.sh 
+
+add uninstalled packages( or download import_packages.sh)
+
+conda install pandas
+conda install matplotlib
+conda install ipython-notebook
+conda install ipython
+jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
+conda install PIL
+conda install bcolz
+conda install scipy
+conda install -c conda-forge opencv

@@ -3,6 +3,7 @@ Miniconda + FastAI + Jupyter notebook + cloud9 on AWS
 ## Pre-requsites
 
 AWS cloud9(t2.micro is not available because of memory limit)
+
 your hands
 
 ## Script

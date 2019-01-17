@@ -4,6 +4,13 @@ Miniconda + FastAI + Jupyter notebook + cloud9 on AWS
 
 AWS cloud9(t2.micro is not available because of memory limit)
 
+Resing disk is needed. Default disk space is 8GB but this is totally not enough.
+[link](https://docs.aws.amazon.com/cloud9/latest/user-guide/move-environment.html#move-environment-resize)
+
+Run disk resizing script above link.
+
+And Cloud9 needs aws access key and secret key. You need configure this first before resizing.
+
 your hands
 
 ## Script
@@ -26,7 +33,8 @@ add uninstalled packages( or download import_packages.sh)
     conda install bcolz
     conda install scipy
     conda install -c conda-forge opencv
-
+    
+    
 ## Run Jupyter notebook
     jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 

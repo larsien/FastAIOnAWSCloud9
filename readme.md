@@ -10,7 +10,9 @@ Miniconda + FastAI + Jupyter notebook + cloud9 on AWS
     wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
     chmod a+x Miniconda2-latest-Linux-x86_64.sh 
     ./Miniconda2-latest-Linux-x86_64.sh 
-    add uninstalled packages( or download import_packages.sh)
+
+add uninstalled packages( or download import_packages.sh)
+
     conda install pandas
     conda install matplotlib
     conda install ipython-notebook

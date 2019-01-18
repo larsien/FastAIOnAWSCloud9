@@ -24,13 +24,11 @@ Run disk resizing script in above link. And before running disk resizing, Cloud9
 Download dataset and unzip to "fastai/data/". check below movie.
 <https://youtu.be/CzdWqFTmn0Y?t=939>
 
-    sudo apt-get install unzip
     unzip bulldoz.zip 
     
 Activate python3 virtual env
     
     conda create -n fastaienv python=3.6 anaconda
-
 
 Add uninstalled packages. Cloud9 has default python version2.7. So that you need to specify python.
 

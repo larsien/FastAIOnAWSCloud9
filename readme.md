@@ -22,7 +22,10 @@ Run disk resizing script above link. And before running disk resizing, Cloud9 ne
     wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
     chmod a+x Miniconda2-latest-Linux-x86_64.sh 
     ./Miniconda2-latest-Linux-x86_64.sh 
-
+activate python3 virtual env
+    
+    conda create -n fastaienv python=3.6 anaconda
+    
 add uninstalled packages( or download import_packages.sh)
 
     conda install pandas
@@ -34,6 +37,8 @@ add uninstalled packages( or download import_packages.sh)
     conda install scipy
     conda install -c conda-forge opencv
     
+    conda install bcolz
+    conda install -c conda-forge opencv
     
 ## Run Jupyter notebook
     jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser

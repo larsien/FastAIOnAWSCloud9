@@ -7,7 +7,7 @@ Miniconda + FastAI + Jupyter notebook + cloud9 on AWS
 Resizing disk is needed. Default disk space is 8GB and this is totally not enough.
 [link](https://docs.aws.amazon.com/cloud9/latest/user-guide/move-environment.html#move-environment-resize)
 
-Run disk resizing script above link. And before running disk resizing, Cloud9 needs to set aws access key and secret key. You need configure this first before resizing.
+Run disk resizing script above link. And before running disk resizing, Cloud9 needs to set aws access key and secret key. You need configure this things.
 
     aws configure
 
@@ -22,28 +22,25 @@ Run disk resizing script above link. And before running disk resizing, Cloud9 ne
     wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
     chmod a+x Miniconda3-latest-Linux-x86_64.sh 
     ./Miniconda3-latest-Linux-x86_64.sh 
-activate python3 virtual env
+    
+Activate python3 virtual env
     
     conda create -n fastaienv python=3.6 anaconda
     
-add uninstalled packages( or download import_packages.sh)
+Add uninstalled packages. Cloud9 has default python version2.7. 
 
-    conda install pandas
-    conda install matplotlib
-    conda install ipython-notebook
-    conda install ipython
-    conda install PIL
-    conda install bcolz
-    conda install scipy
-    conda install -c conda-forge opencv
-    
-    conda install bcolz
-    conda install -c conda-forge opencv
+    conda install -c anaconda bcolz
+    conda update -n base conda
+    python3 -m pip install opencv-python
+    python3 -m pip install graphviz
+    python3 -m pip install sklearn_pandas
+    python3 -m pip install isoweek
+    python3 -m pip install pandas_summary
     
 ## Run Jupyter notebook
     jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 
-run Preview on Cloud9 and add above port 
+Run Preview on Cloud9 and add above port.(Below link is an example)
 
     http://*.vfs.cloud9.ap-southeast-1.amazonaws.com:8080/tree/workspace_name
 

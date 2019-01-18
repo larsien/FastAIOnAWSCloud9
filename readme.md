@@ -1,13 +1,13 @@
-Miniconda + FastAI + Jupyter notebook + cloud9 on AWS
+Miniconda + FastAI + Jupyter notebook + Cloud9 on AWS
 ======
 ## Pre-requsites
 
-#### AWS cloud9(t2.micro is not available because of memory limit)
+#### AWS cloud9(t2.micro is not available because of memory limit. Use t2.small or above)
 
-Resizing disk is needed. Default disk space is 8GB and this is totally not enough.
+Resizing disk is needed. Default disk space is 8GB and this is totally not enough. I think 16GB is enough to run.
 [link](https://docs.aws.amazon.com/cloud9/latest/user-guide/move-environment.html#move-environment-resize)
 
-Run disk resizing script above link. And before running disk resizing, Cloud9 needs to set aws access key and secret key. You need configure this things.
+Run disk resizing script in above link. And before running disk resizing, Cloud9 needs to set aws access key and secret key. You need configure this things.
 
     aws configure
 
@@ -27,7 +27,7 @@ Activate python3 virtual env
     
     conda create -n fastaienv python=3.6 anaconda
     
-Add uninstalled packages. Cloud9 has default python version2.7. 
+Add uninstalled packages. Cloud9 has default python version2.7. So that you need to specify python.
 
     conda install -c anaconda bcolz
     conda update -n base conda
@@ -44,3 +44,6 @@ Run Preview on Cloud9 and add above port.(Below link is an example)
 
     http://*.vfs.cloud9.ap-southeast-1.amazonaws.com:8080/tree/workspace_name
 
+## References
+<https://medium.com/@GuruAtWork/fast-ai-lesson-1-7fc38e978d37>
+<https://github.com/fastai/fastai/blob/master/README.md#installation-issues>

@@ -26,7 +26,7 @@ Download dataset and unzip to "fastai/data/bulldozers/". check below movie.
 
     unzip bulldoz.zip 
     
-Activate python3 virtual env
+Activate python3 virtual env. FastAI needs python3. I had a trouble because of python2 comparability.
     
     conda create -n fastaienv python=3.6 anaconda
 
@@ -43,7 +43,7 @@ Add uninstalled packages. Cloud9 has default python version2.7. So that you need
 ## Run Jupyter notebook
     jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 
-Run <Code>Preview - Preview Running Application</Code> on Cloud9 then you can get accees link like below.
+Run <Code>Preview - Preview Running Application</Code> on Cloud9 then you can see one browser opened. And you can get accees link like below.
 
     http://*.vfs.cloud9.ap-southeast-1.amazonaws.com/
     
@@ -51,7 +51,7 @@ Add above port.(Below link is an example)
     
     http://*.vfs.cloud9.ap-southeast-1.amazonaws.com:8080/
 
-In terminal, you can get access token. Insert the token to login. DONE!
+In terminal, you can get logged access token. Insert the token to login. DONE!
 
 ## References
 <https://medium.com/@GuruAtWork/fast-ai-lesson-1-7fc38e978d37>

@@ -34,6 +34,7 @@ Add uninstalled packages. Cloud9 has default python version2.7. So that you need
 
     conda install -c anaconda bcolz
     conda update -n base conda
+    conda install feather-format -c conda-forge
     python3 -m pip install opencv-python
     python3 -m pip install graphviz
     python3 -m pip install sklearn_pandas

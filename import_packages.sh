@@ -1,9 +1,8 @@
-conda install pandas
-conda install matplotlib
-conda install ipython-notebook
-conda install ipython
-jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
-conda install PIL
-conda install bcolz
-conda install scipy
-conda install -c conda-forge opencv
+conda install -c anaconda bcolz
+conda update -n base conda
+conda install feather-format -c conda-forge
+python3 -m pip install opencv-python
+python3 -m pip install graphviz
+python3 -m pip install sklearn_pandas
+python3 -m pip install isoweek
+python3 -m pip install pandas_summary

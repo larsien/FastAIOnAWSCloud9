@@ -8,6 +8,8 @@ Resizing disk is needed. Default disk space is 8GB and this is totally not enoug
 
 [Resizing disk guide](https://docs.aws.amazon.com/cloud9/latest/user-guide/move-environment.html#move-environment-resize)
 
+Download script in above link and run. 
+
     ./resize.sh 16
 
 Run disk resizing script in above link. And before running disk resizing, Cloud9 needs to set aws access key and secret key. You need configure this things.

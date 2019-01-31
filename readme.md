@@ -12,7 +12,7 @@ Download script in above link and run.
 
     ./resize.sh 16
 
-Run disk resizing script in above link. And before running disk resizing, Cloud9 needs to set aws access key and secret key. You need configure this things.
+Run disk resizing script in above link. And before running disk resizing, Cloud9 needs to set aws access key and secret key. You need to  configure this things.
 
     aws configure
 

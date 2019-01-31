@@ -5,7 +5,8 @@ Miniconda + FastAI + Jupyter notebook + Cloud9 on AWS
 #### AWS cloud9(t2.micro is not available because of memory limit. Use t2.small or above)
 
 Resizing disk is needed. Default disk space is 8GB and this is totally not enough. I think 16GB is enough to run.
-[link](https://docs.aws.amazon.com/cloud9/latest/user-guide/move-environment.html#move-environment-resize)
+
+[Resizing disk guide](https://docs.aws.amazon.com/cloud9/latest/user-guide/move-environment.html#move-environment-resize)
 
     ./resize.sh 16
 

@@ -47,13 +47,13 @@ Add uninstalled packages. Cloud9 has default python version2.7. So that you need
 ## Run Jupyter notebook
     jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 
-Run <Code>Preview - Preview Running Application</Code> on Cloud9 then you can see one browser opened. And you can get accees link like below.
+Run <Code>Preview - Preview Running Application</Code> on Cloud9 then you can see one browser opened. And you can get accees link like below. Or you can check your instance id in your browser(example : https://ap-southeast-1.console.aws.amazon.com/cloud9/ide/[instance_id])
 
-    http://*.vfs.cloud9.ap-southeast-1.amazonaws.com/
+    http://[your instance id].vfs.cloud9.ap-southeast-1.amazonaws.com/
     
 Add above port.(Below link is an example)
     
-    http://*.vfs.cloud9.ap-southeast-1.amazonaws.com:8080/
+    http://[your instance id].vfs.cloud9.ap-southeast-1.amazonaws.com:8080/
 
 In terminal, you can get logged access token. Insert the token to login. DONE!
 

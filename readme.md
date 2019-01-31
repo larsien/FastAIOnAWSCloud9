@@ -21,7 +21,7 @@ Run disk resizing script in above link. And before running disk resizing, Cloud9
     chmod a+x Miniconda3-latest-Linux-x86_64.sh 
     ./Miniconda3-latest-Linux-x86_64.sh 
 
-Download dataset and unzip to "fastai/data/bulldozers/". check below movie.
+Download dataset and unzip to "fastai/data/bulldozers/". Check below movie to download dataset.
 <https://youtu.be/CzdWqFTmn0Y?t=939>
 
     unzip bulldoz.zip 

@@ -55,7 +55,11 @@ Add above port.(Below link is an example)
     
     http://[your instance id].vfs.cloud9.ap-southeast-1.amazonaws.com:8080/
 
-In terminal, you can get logged access token. Insert the token to login. DONE!
+In terminal, you can get logged access token. Insert the token to login. 
+
+    http://[your instance id].vfs.cloud9.ap-southeast-1.amazonaws.com:8080/tree?token=[token]
+
+DONE!
 
 ## References
 <https://medium.com/@GuruAtWork/fast-ai-lesson-1-7fc38e978d37>
